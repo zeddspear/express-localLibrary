@@ -12,7 +12,7 @@ const RateLimit = require("express-rate-limit");
 const mongoose = require("mongoose");
 mongoose.set("strictQuery", false);
 
-const dev_db_uri = "mongodb+srv://zeddspear:ALLAHis1@cluster0.yheyqi6.mongodb.net/local_library?retryWrites=true&w=majority";
+const dev_db_uri = "mongodb+srv://username:password@cluster0.yheyqi6.mongodb.net/DBname?retryWrites=true&w=majority";
 const mongoDB = process.env.MONGODB_URI || dev_db_uri;
 
 const indexRouter = require('./routes/index');
